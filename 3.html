@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <title>Document
+    </title>
+
+    </head>
+
+    <body>
+        <form style="border: 2px; border-color:black;">
+            <input type="text" id="nama" name="nama" placeholder="nama" /><br /><br />
+            <input type="text" id="pass" nama="pass" placeholder="password" /><br /><br />
+            <input type="text" id="alamat" nama="alamat" placeholder="alamat" /><br /><br />
+            <input type="text" id="no_handphone" nama="no handphone" placeholder="no handphone" /><br /><br />
+            <button onclick="fun()">submit</button>
+            </form>
+            <script type="text/javascript">
+                function fun() {
+                    var i = document.getElementById("nama").value;
+                    var ii = document.getElementById("pass").value;
+                    var iii = document.getElementById("alamat").value;
+                    var iv = document.getElementById("no_handphone").value;
+
+                    this.log(i, ii, iii, iv);
+                }
+            function log(nama, pass, alamat, nohandphone) {
+                if (nama == "kopi" && pass == "kopihitam" && alamat == "grandtaruma" && no_handphone == "0857"){
+                    return document.write('data benar');
+                } else {
+                    document.write('data salah');
+                }
+            }
+            </script>
+    </body>
+    </html>
